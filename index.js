@@ -1,6 +1,7 @@
 const readlineSync = require("readline-sync");
 const chalk = require("chalk");
 const LocalStorage = require("node-localstorage").LocalStorage;
+const localStorage = new LocalStorage("./scratch");
 let score = 0;
 let scroreBoard;
 scroreBoard = localStorage.getItem("scroreBoard");
