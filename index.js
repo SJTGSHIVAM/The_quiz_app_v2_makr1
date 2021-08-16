@@ -182,3 +182,24 @@ function levelplay(qarray) {
     qal = qal - 1;
   }
 }
+
+function play({ question, answer, correct, weitgh, type, wrongAlert }) {
+  console.log(chalk.red(question));
+  answer.map((option, idx) => {
+    console.log(idx + ". " + option);
+  });
+
+  var userAnswer = readlineSync.question(chalk.blue("Your Answer: "));
+
+  if (userAnswer == correct) {
+    score = score + weitgh;
+    if (type === "normal") console.log("You are right!");
+    else console.log("It was a bonus quesion and you are right!");
+  } else {
+    score = score - 1;
+    console.log("Wrong! \n" + wrongAlert);
+  }
+
+  console.log("current score: " + score);
+  console.log("-------------X-------------");
+}
