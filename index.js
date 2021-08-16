@@ -1,6 +1,19 @@
 const readlineSync = require("readline-sync");
 const chalk = require("chalk");
+const LocalStorage = require("node-localstorage").LocalStorage;
 let score = 0;
+let scroreBoard;
+scroreBoard = localStorage.getItem("scroreBoard");
+// console.log(scroreBoard);
+
+if (!scroreBoard) {
+  //   console.log("sss");
+
+  scroreBoard = [];
+} else {
+  //   console.log("xxx");
+  scroreBoard = JSON.parse(scroreBoard);
+}
 let userName = readlineSync.question("PLEASE ENTER YOUR NAME: ");
 
 console.log(
@@ -220,3 +233,12 @@ if (score > 8) {
 if (score > 4) {
   console.log(chalk.red("That was a pretty decent score!"));
 }
+scroreBoard.push({ name: userName, score: score });
+scroreBoard = scroreBoard.sort((a, b) => b.score - a.score);
+
+localStorage.setItem("scroreBoard", JSON.stringify(scroreBoard));
+console.log(chalk.red("\nSCOREBOARD:-"));
+console.log("   NAME" + "\t\t" + "SCORE");
+scroreBoard.map((player) => {
+  console.log(player.name + "\t\t" + player.score);
+});
