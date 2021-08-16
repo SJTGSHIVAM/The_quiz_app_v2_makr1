@@ -99,3 +99,72 @@ const ynQuestions = [
     id: 10,
   },
 ];
+
+const l2Questions = [
+  {
+    question: "Which city do i live in? ",
+    answer: ["Kashipur", "Moradabad", "Chamoli", "Ramnagar"],
+    correct: 0,
+    weitgh: 1,
+    type: "normal",
+    wrongAlert: "kashipur",
+    id: 1,
+  },
+
+  {
+    question: "What is an impossible thing that I want to do ",
+    answer: ["Eat whole day", "drink 7 litres of water", "Fly", "Be a ghost"],
+    correct: 2,
+    weitgh: 2,
+    type: "bonus",
+    wrongAlert: "I wish I could fly",
+    id: 2,
+  },
+
+  {
+    question: "who is my favourite Animated character? ",
+    answer: ["Shinchan", "Avatar", "Doraemon", "Nobita"],
+    correct: 1,
+    weitgh: 2,
+    type: "bonus",
+    wrongAlert: "Avatar form 'Avatar the last air bender'",
+    id: 3,
+  },
+
+  {
+    question: "Who is my favourite color? ",
+    answer: ["green", "blue", "yellow", "red"],
+    correct: 2,
+    weitgh: 1,
+    type: "normal",
+    wrongAlert: "Its red",
+    id: 4,
+  },
+  {
+    question: "Who is my second favourite color? ",
+    answer: ["pink", "yellow", "green", "red"],
+    correct: 0,
+    weitgh: 1,
+    type: "normal",
+    wrongAlert: "Its red",
+    id: 5,
+  },
+  {
+    question: "Which instrument I am learning to play? ",
+    answer: ["ukelele", "flute", "saxophone", "Banjo"],
+    correct: 0,
+    weitgh: 1,
+    type: "normal",
+    wrongAlert: "Ukelele",
+    id: 6,
+  },
+  {
+    question: "where was my college located",
+    answer: ["Delhi", "Gopeshwar", "Mars", "Kashipur"],
+    correct: 1,
+    weitgh: 1,
+    type: "normal",
+    wrongAlert: "Its red",
+    id: 7,
+  },
+];
