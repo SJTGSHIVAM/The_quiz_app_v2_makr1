@@ -201,7 +201,7 @@ function levelplay(qarray) {
 
   // let prevQ = new Set();
   let possibleQ;
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 5; i++) {
     possibleQ = Math.floor(Math.random() * qal);
 
     play(temparr[possibleQ]);
