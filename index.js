@@ -104,12 +104,12 @@ const ynQuestions = [
     id: 9,
   },
   {
-    question: "Do I eat a lot?",
+    question: "Do I drink water a lot?",
     answer: ["No", "Yes"],
-    correct: 0,
+    correct: 1,
     weitgh: 1,
     type: "normal",
-    wrongAlert: "Too lazy to eat",
+    wrongAlert: "More than avg.",
     id: 10,
   },
 ];
@@ -192,7 +192,7 @@ function levelplay(qarray) {
     possibleQ = Math.floor(Math.random() * qal);
 
     play(temparr[possibleQ]);
-    temparr.slice(possibleQ, 1);
+    temparr.splice(possibleQ, 1);
     qal = qal - 1;
   }
 }
