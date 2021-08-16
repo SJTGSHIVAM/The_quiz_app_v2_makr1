@@ -170,15 +170,15 @@ const l2Questions = [
 ];
 function levelplay(qarray) {
   let qal = qarray.length;
-  let temp = [...qarray];
+  let temparr = [...qarray];
 
   // let prevQ = new Set();
   let possibleQ;
   for (var i = 0; i < 4; i++) {
     possibleQ = Math.floor(Math.random() * qal);
 
-    play(temp[possibleQ]);
-    temp.slice(possibleQ, 1);
+    play(temparr[possibleQ]);
+    temparr.slice(possibleQ, 1);
     qal = qal - 1;
   }
 }
