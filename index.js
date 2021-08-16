@@ -21,6 +21,19 @@ console.log(
   chalk.blue("\nWELCOME " + userName.toUpperCase() + " TO - GET TO KNOW ME\n")
 );
 
+console.log(chalk.red("A SIMPLE QUIZ TO GET TO KNOW ME BETTER. LET'S START!"));
+
+console.log(chalk.blue("\nRULES:"));
+console.log(
+  "1- YOU GET +1 MARKS FOR EACH CORRECT ANSWER (some are bonus questions with hidden marks)"
+);
+console.log("2- YOU GET -1 MARKS FOR EACH INCORRECT ANSWER\n");
+console.log("3- ENTER OPTION NUMBER IN ANSWER\n");
+console.log("4- YOU GET +10 MARKS FOR EVERY LEVEL YOU CLEAR\n");
+console.log(
+  "5- IF YOU ATTEMPT MORE THE ONE TIME HIGHEST SCORE WILL BE STORED\n"
+);
+
 const ynQuestions = [
   {
     question: "Do I watch sports? ",
