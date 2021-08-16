@@ -203,3 +203,20 @@ function play({ question, answer, correct, weitgh, type, wrongAlert }) {
   console.log("current score: " + score);
   console.log("-------------X-------------");
 }
+levelplay(ynQuestions);
+
+if (score > 4) {
+  console.log(chalk.blue("You are eligible for level 2"));
+  score = score + 10;
+  levelplay(l2Questions);
+}
+let temp = [...qarray];
+
+console.log(chalk.blue("YOUR TOTAL SCORE IS: ", score));
+
+if (score > 8) {
+  console.log(chalk.red("Looks like you know me very well!"));
+}
+if (score > 4) {
+  console.log(chalk.red("That was a pretty decent score!"));
+}
