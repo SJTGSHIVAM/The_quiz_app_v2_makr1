@@ -1,5 +1,5 @@
 **Description**
-This is Version 2 of quiz "**DO YOU KNOW ME**"(v1 is also available on my github account).
+This is Version 2 of quiz "**DO YOU KNOW ME**"(v1 is also available on my github account).The quiz checks how well you know me in person. It is developed in nodeJS.
 
 **Live Link** : https://replit.com/@SHIVAMPANDEY22/Thequizappv2makr1?output=1&embed=1#index.js
 
